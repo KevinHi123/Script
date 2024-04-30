@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos JavaScript</title>
+    
+</head>
+<body>
+    <h1>Fundamentos de JavaScript</h1>
+    <script>
+        //Aqui va el comentario
+        /*Aqui esta
+        el comentario*/
+
+        /*-----Variables------*/
+        var saludo_amigo='Hola Mundo desde JavaScript'
+        console.log(saludo_amigo)
+        var a = 4
+        console.log(a)
+        /*-------Recomendaciones-------
+        mi_archivo_javascript.js
+        Cuando utilicemos una variable constante
+        const UNA_CONSTANTE="Soy una constante"
+        PI = 3.141516
+
+        Creamos el nombre de la clase tipo camello
+        class SerHumano{
+            constructor(nombre, apellido){
+                this.nombre=nombre
+            }
+        }
+        NO podemos utilizar palabras reservadas 
+        */
+
+        /*Tipos de variables: Existen dos tipos de variables var->variables globales
+        variables de tipo let-> son variables locales o de sección de bloques*/
+
+        var hola="Hola mundo"
+        let hello="Hello word"
+
+        console.log(hola)
+        console.log(hello)
+        console.log(window)
+        console.log(window.hola)
+        console.log(window.hello)
+
+        var musica="Rock"
+        console.log("La variable música antes del bloque", musica)
+        {
+            var musica = "POP"
+            console.log("La varible música dentro del bloque", musica)
+        }
+        console.log("La variable música despues del bloque", musica)
+        console.log("**********Let*********")
+        let musica2="Rock"
+        console.log("La variable música dos antes de entrar del bloque", musica2)
+        {
+            let musica2 = "POP"
+            console.log("La variable música dos dentro del bloque", musica2)
+        }
+        console.log("La variable música 2 despues del bloque", musica2)
+
+    </script>
+</body>
+</html>
